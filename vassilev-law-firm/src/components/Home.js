@@ -13,25 +13,25 @@ const Home = () => {
                         <div className="carousel-caption">
                             <h1 className="animated fadeInLeft">Адвокатска кантора Атанас Василев</h1>
                             <p className="animated fadeInRight">гр. Смолян, ул. Полк. Дичо Петров 13</p>
-                            <a className="btn animated fadeInUp" href="#">Запиши час</a>
+                            <a className="btn animated fadeInUp" href="/contact">Свържи се</a>
                         </div>
                     </div>
 
                     <div className="carousel-item">
-                        <img src="img/carousel-2.jpg" alt="Carousel Image" />
+                        <img src="img/carousel-2.jpg" alt="Carousel" />
                         <div className="carousel-caption">
                             <h1 className="animated fadeInLeft">Готови сме да защитим интересите ви.</h1>
                             <p className="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                            <a className="btn animated fadeInUp" href="#">Запиши час</a>
+                            <a className="btn animated fadeInUp" href="/contact">Свържи се</a>
                         </div>
                     </div>
 
                     <div className="carousel-item">
-                        <img src="img/carousel-3.jpg" alt="Carousel Image" />
+                        <img src="img/carousel-3.jpg" alt="Carousel" />
                         <div className="carousel-caption">
                             <h1 className="animated fadeInLeft">We fight for your privilege</h1>
                             <p className="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                            <a className="btn animated fadeInUp" href="#">Get free consultation</a>
+                            <a className="btn animated fadeInUp" href="/contact">Свържи се</a>
                         </div>
                     </div>
                 </div>
