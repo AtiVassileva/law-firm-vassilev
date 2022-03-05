@@ -39,7 +39,7 @@ const About = () => {
                     <div class="timeline-start">
                         <div class="timeline-container left">
                             <div class="timeline-content">
-                                <h2><span>2022</span>Наши дни</h2>
+                                <h2><span>{new Date().getFullYear()}</span>Наши дни</h2>
                                 <p>
                                 Адв. Василев практикува в областите на гражданското, търговското, вещното, облигационното, наследственото, медицинското и гражданско-процесуалното право.
                                 </p>
