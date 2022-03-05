@@ -50,7 +50,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
         </div>
     );
 };

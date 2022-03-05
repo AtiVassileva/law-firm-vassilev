@@ -11,7 +11,8 @@ const Home = () => {
                     <div className="carousel-item active">
                         <img src="img/carousel-1.jpg" alt="Carousel" />
                         <div className="carousel-caption">
-                            <h1 className="animated fadeInLeft">Адвокатска кантора Атанас Василев</h1>
+                            <h1 className="animated fadeInLeft">Адвокатска кантора <br/>
+                            Атанас Василев</h1>
                             <p className="animated fadeInRight">гр. Смолян, ул. Полк. Дичо Петров 13</p>
                             <a className="btn animated fadeInUp" href="/contact">Свържи се</a>
                         </div>
@@ -45,36 +46,115 @@ const Home = () => {
                     <span className="sr-only">Next</span>
                 </a>
             </div>
-            <div class="feature-top">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-item">
-                                <i class="far fa-check-circle"></i>
+            <div className="feature-top">
+                <div className="container-fluid">
+                    <div className="row align-items-center">
+                        <div className="col-md-3 col-sm-6">
+                            <div className="feature-item">
+                                <i className="far fa-check-circle"></i>
                                 <h3>Legal</h3>
                                 <p>Govt Approved</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-item">
-                                <i class="fa fa-user-tie"></i>
+                        <div className="col-md-3 col-sm-6">
+                            <div className="feature-item">
+                                <i className="fa fa-user-tie"></i>
                                 <h3>Attorneys</h3>
                                 <p>Expert Attorneys</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-item">
-                                <i class="far fa-thumbs-up"></i>
+                        <div className="col-md-3 col-sm-6">
+                            <div className="feature-item">
+                                <i className="far fa-thumbs-up"></i>
                                 <h3>100% Успех</h3>
                                 <p>Без загубено дело</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-item">
-                                <i class="far fa-handshake"></i>
+                        <div className="col-md-3 col-sm-6">
+                            <div className="feature-item">
+                                <i className="far fa-handshake"></i>
                                 <h3>Support</h3>
                                 <p>Quick Support</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faqs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="faqs-img">
+                                <img src="img/faqs.jpg" alt="Law"/>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="section-header">
+                                <h2>Have A Questions?</h2>
+                            </div>
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
+                                            <span>1</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                                            <span>2</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                                            <span>3</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                                            <span>4</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                                            <span>5</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <a class="btn" href="">Ask more</a>
                         </div>
                     </div>
                 </div>
