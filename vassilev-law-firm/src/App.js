@@ -2,6 +2,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import NavMenu from './components/NavMenu';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
       </Switch>
+      <Footer/>
     </div>
   );
 }
