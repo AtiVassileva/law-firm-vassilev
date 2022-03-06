@@ -14,7 +14,6 @@ const NavMenu = () => {
                             </Link>
                             <Link to="/about" className="nav-item nav-link">За мен</Link>
                             <Link to="/practice" className="nav-item nav-link">Практика</Link>
-                            <Link to="/pricing" className="nav-item nav-link">Тарифи</Link>
                             <Link to="/contact" className="nav-item nav-link">Контакти</Link>
 
                         </div>
