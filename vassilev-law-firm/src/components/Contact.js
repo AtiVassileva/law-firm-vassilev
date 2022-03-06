@@ -1,17 +1,32 @@
-﻿const Contact = () => {
+﻿import emailjs from 'emailjs-com';
+
+const Contact = () => {
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_t9eztsu', 'template_bzgu2dd', e.target, 'eHPiisu9RiN1VfbIB')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        e.target.reset();
+    };
+
     return (
         <>
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+            <div className="page-header">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
                             <h2>Директен контакт</h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="contact">
-                <div class="container">
+            <div className="contact">
+                <div className="container">
                     <div className="row">
                         <div className="col-md-6">
                             <div className="contact-info">
@@ -38,23 +53,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="contact-form">
-                                <form>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Име и фамилия" required="required" />
+                        <div className="col-md-6">
+                            <div className="contact-form">
+                                <form onSubmit={sendEmail}>
+                                    <div className="form-group">
+                                        <input type="text" className="form-control" placeholder="Име и фамилия"
+                                            name="name"
+                                            required="required" />
                                     </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Вашата електронна поща" required="required" />
+                                    <div className="form-group">
+                                        <input type="email" className="form-control" placeholder="Вашата електронна поща"
+                                            name="email"
+                                            required="required" />
                                     </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Тема" required="required" />
+                                    <div className="form-group">
+                                        <input type="text" className="form-control"
+                                            name="subject"
+                                            placeholder="Тема" required="required" />
                                     </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Съдържание" required="required" ></textarea>
+                                    <div className="form-group">
+                                        <textarea className="form-control" name="content"
+                                            placeholder="Съдържание" required="required" ></textarea>
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit">Изпрати запитване</button>
+                                        <button className="btn" type="submit">Изпрати запитване</button>
                                     </div>
                                 </form>
                             </div>
