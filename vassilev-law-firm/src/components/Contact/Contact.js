@@ -1,18 +1,11 @@
-﻿import ContactForm from './ContactForm';
+﻿import PageHeader from '../PageHeader';
+import ContactForm from './ContactForm';
 import ContactInfo from './ContactInfo';
 
 const Contact = () => {
     return (
         <>
-            <div className="page-header">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <h2>Директен контакт</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <PageHeader title="Директен контакт"/>
             <div className="contact">
                 <div className="container">
                     <div className="row">

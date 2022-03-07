@@ -1,8 +1,10 @@
 ﻿import { Link } from 'react-router-dom';
+import PageHeader from '../PageHeader';
 
 const About = () => {
     return (
         <>
+            <PageHeader title="Повече информация"/>
             <div className="about">
                 <div className="container">
                     <div className="row align-items-center">

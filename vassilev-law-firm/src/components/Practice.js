@@ -1,19 +1,12 @@
 ﻿import { Link } from 'react-router-dom';
+import PageHeader from './PageHeader';
 
 const Practice = () => {
     return (
         <>
-            <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Професионална практика</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <PageHeader title="Професионална практика" />
             <div className="service">
-                <div className="container">                   
+                <div className="container">
                     <div className="row">
                         <div className="col-lg-4 col-md-6">
                             <div className="service-item">
@@ -135,7 +128,7 @@ const Practice = () => {
                         </div>
                         <div class="col-md-5">
                             <div class="feature-img">
-                                <img src="img/feature.jpg" alt="Feature"/>
+                                <img src="img/feature.jpg" alt="Feature" />
                             </div>
                         </div>
                     </div>
