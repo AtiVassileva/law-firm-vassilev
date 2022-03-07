@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Home = () => {
     return (
         <>
@@ -11,10 +13,12 @@ const Home = () => {
                     <div className="carousel-item active">
                         <img src="img/carousel-1.jpg" alt="Carousel" />
                         <div className="carousel-caption">
-                            <h1 className="animated fadeInLeft">Адвокатска кантора <br/>
-                            Атанас Василев</h1>
-                            <p className="animated fadeInRight">гр. Смолян, ул. Полк. Дичо Петров 13</p>
-                            <a className="btn animated fadeInUp" href="/contact">Свържи се</a>
+                            <h1 className="animated fadeInLeft">Адвокатска кантора <br />
+                                Атанас Василев</h1>
+                            <p className="animated fadeInRight">гр. София, бул. Скобелев 19</p>
+                            <Link to="/contact" className="btn animated fadeInUp">
+                                Свържи се
+                            </Link>
                         </div>
                     </div>
 
@@ -22,17 +26,21 @@ const Home = () => {
                         <img src="img/carousel-2.jpg" alt="Carousel" />
                         <div className="carousel-caption">
                             <h1 className="animated fadeInLeft">Готови сме да защитим интересите ви.</h1>
-                            <p className="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                            <a className="btn animated fadeInUp" href="/contact">Свържи се</a>
+                            <p className="animated fadeInRight">Не се колебайте да се свържете с нас!</p>
+                            <Link to="/contact" className="btn animated fadeInUp">
+                                Свържи се
+                            </Link>
                         </div>
                     </div>
 
                     <div className="carousel-item">
                         <img src="img/carousel-3.jpg" alt="Carousel" />
                         <div className="carousel-caption">
-                            <h1 className="animated fadeInLeft">We fight for your privilege</h1>
-                            <p className="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                            <a className="btn animated fadeInUp" href="/contact">Свържи се</a>
+                            <h1 className="animated fadeInLeft">Борим се за правата ви.</h1>
+                            <p className="animated fadeInRight">Вярваме в справедливостта.</p>
+                            <Link to="/contact" className="btn animated fadeInUp">
+                                Свържи се
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -85,12 +93,12 @@ const Home = () => {
                     <div className="row">
                         <div className="col-md-5">
                             <div className="faqs-img">
-                                <img src="img/faqs.jpg" alt="Law"/>
+                                <img src="img/faqs.jpg" alt="Law" />
                             </div>
                         </div>
                         <div className="col-md-7">
                             <div className="section-header">
-                                <h2>Have A Questions?</h2>
+                                <h2>Често задавани въпроси</h2>
                             </div>
                             <div id="accordion">
                                 <div className="card">
@@ -152,9 +160,9 @@ const Home = () => {
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
                             </div>
-                            <a className="btn" href="">Ask more</a>
+                            <Link className="btn" to="">Виж всички</Link>
                         </div>
                     </div>
                 </div>

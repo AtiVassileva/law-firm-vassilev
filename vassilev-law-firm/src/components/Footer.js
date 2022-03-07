@@ -23,16 +23,23 @@ const Footer = () => {
                                     <h2>Бързи линкове</h2>
                                     <Link to="/about">За мен</Link>
                                     <Link to="/practice">Практика</Link>
-                                    <Link to="/pricing">Тарифи</Link>
                                     <Link to="/contact">Контакти</Link>
+                                    <Link to="/faq">Често задавани въпроси</Link>
                                 </div>
                             </div>
                             <div className="col-md-6 col-lg-4">
                                 <div className="footer-contact">
                                     <h2>Свържи се</h2>
-                                    <p><i className="fa fa-map-marker-alt"></i>гр. Смолян, ул. Дичо Петров 13</p>
-                                    <p><i className="fa fa-phone-alt"></i>+359888587730</p>
-                                    <p><i className="fa fa-envelope"></i>atvassilev@abv.bg</p>
+                                    <p>
+                                        <i className="fa fa-map-marker-alt"></i>
+                                        гр. София, бул. Скобелев 19
+                                    </p>
+                                    <p><i className="fa fa-phone-alt"></i>
+                                        +359888587730
+                                    </p>
+                                    <p><i className="fa fa-envelope"></i>
+                                        atvassilev@abv.bg
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -43,10 +50,12 @@ const Footer = () => {
             <div className="container copyright">
                 <div className="row">
                     <div className="col-md-6">
-                        <p>&copy; <a href="https://htmlcodex.com/law-firm-website-template">HTML Codex</a>, All Right Reserved.</p>
+                        <p>&copy; <Link to="https://htmlcodex.com/law-firm-website-template">HTML Codex</Link>, All Right Reserved.
+                        </p>
                     </div>
                     <div className="col-md-6">
-                        <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                        <p>Designed By <Link to="https://htmlcodex.com">HTML Codex</Link>
+                        </p>
                     </div>
                 </div>
             </div>
