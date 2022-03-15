@@ -21,10 +21,10 @@ const Footer = () => {
                             <div className="col-md-6 col-lg-4">
                                 <div className="footer-link">
                                     <h2>Бързи линкове</h2>
+                                    <Link to="/">Начало</Link>
                                     <Link to="/about">За мен</Link>
                                     <Link to="/practice">Практика</Link>
                                     <Link to="/contact">Контакти</Link>
-                                    <Link to="/faq">Често задавани въпроси</Link>
                                 </div>
                             </div>
                             <div className="col-md-6 col-lg-4">
@@ -54,7 +54,9 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="col-md-6">
-                        <p>Designed By <Link to="https://htmlcodex.com">HTML Codex</Link>
+                        <p>Designed By 
+                            <Link to="https://htmlcodex.com">HTML Codex
+                            </Link>
                         </p>
                     </div>
                 </div>
