@@ -54,14 +54,16 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="col-md-6">
-                        <p>Designed By 
+                        <p>Designed By
                             <Link to="https://htmlcodex.com">HTML Codex
                             </Link>
                         </p>
                     </div>
                 </div>
             </div>
-            <a href="#" className="back-to-top"><i className="fa fa-chevron-up"></i></a>
+            <a href="#" className="back-to-top">
+                <i className="fa fa-chevron-up"></i>
+            </a>
         </div>
     );
 };

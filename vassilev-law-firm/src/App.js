@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <div id="app">
+    <div className="wrapper">
       <ScrollToTop>
         <NavMenu />
         <Switch>
