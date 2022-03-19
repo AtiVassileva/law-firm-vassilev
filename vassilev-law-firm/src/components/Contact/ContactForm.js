@@ -1,13 +1,16 @@
 import emailjs from 'emailjs-com';
+import { useNotificationContext, types } from '../../contexts/NotificationContext';
+import { successfullySentQuestionMessage } from '../../utils/notificationConstants';
 
 const ContactForm = () => {
+    const { addNotification } = useNotificationContext();
 
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_t9eztsu', 'template_bzgu2dd', e.target, 'eHPiisu9RiN1VfbIB')
-            .then((result) => {
-                console.log(result.text);
+            .then(() => {
+                addNotification(successfullySentQuestionMessage, types.success)
             }, (error) => {
                 console.log(error.text);
             });

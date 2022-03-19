@@ -1,0 +1,1 @@
+export const successfullySentQuestionMessage = "Успешно изпратено запитване!";
